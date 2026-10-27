@@ -461,6 +461,31 @@ strong{color:var(--ink-soft);font-weight:700}
 .co-tag{font-size:12.5px;color:var(--body-soft);font-weight:600}
 .co-tag+.co-tag::before{content:"·";margin-right:10px;color:#c3bcd3}
 
+/* ---- plano básico (sem bônus) ---- */
+.basic-plan{
+  background:var(--card);
+  border:1px solid var(--line);border-radius:var(--radius);
+  box-shadow:0 20px 44px -30px rgba(63,47,120,.3);
+  padding:30px 28px;margin-top:24px;
+  display:grid;grid-template-columns:1fr 1fr;gap:12px 40px;align-items:center;
+}
+.basic-head h3{font-family:var(--serif);font-size:23px;color:var(--ink);font-weight:700;margin:0 0 14px}
+.basic-price{
+  font-family:var(--sans);font-weight:800;
+  font-size:40px;color:var(--ink-soft);
+  line-height:1;margin:0 0 8px;letter-spacing:-0.02em;
+}
+.basic-plan .recv{margin:0}
+.recv li.off{color:#a59bbf;text-decoration:line-through}
+.recv li.off .tick{color:#c3bcd3}
+.btn-outline{
+  grid-column:1 / -1;
+  background:transparent;color:var(--purple);
+  border:2px solid var(--purple);
+  font-size:13px;padding:16px 24px;
+  border-radius:var(--radius-pill);
+}
+
 /* ---- FAQ accordion ---- */
 .faq{display:flex;flex-direction:column;gap:14px;margin-top:40px}
 .faq details{
@@ -492,7 +517,7 @@ strong{color:var(--ink-soft);font-weight:700}
   .grid3{grid-template-columns:1fr}
   .two-up,.bonus-grid{grid-template-columns:1fr}
   .split{grid-template-columns:1fr}
-  .checkout{grid-template-columns:1fr}
+  .checkout,.basic-plan{grid-template-columns:1fr}
 }
 @media (max-width:520px){
   .inner{padding-block:52px}
