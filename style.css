@@ -262,8 +262,10 @@ strong{color:var(--ink-soft);font-weight:700}
 
 /* ---- trust chips bar ---- */
 .chips{
-  display:flex;flex-wrap:wrap;justify-content:center;gap:12px;
+  display:grid;grid-template-columns:repeat(2,1fr);gap:12px;
+  max-width:560px;margin-inline:auto;
 }
+.chips .chip{justify-content:center;text-align:left;line-height:1.3}
 .chip{
   display:inline-flex;align-items:center;gap:8px;
   background:var(--chip-bg);
@@ -525,6 +527,8 @@ strong{color:var(--ink-soft);font-weight:700}
   .reassure{padding:28px 24px}
   .solution-copy,.co-col{padding:26px 22px}
   .chip{font-size:12.5px;padding:10px 15px}
+  .chips{gap:8px}
+  .chips .chip{font-size:11.5px;padding:10px 10px;gap:6px}
   .co-tags{justify-content:flex-start}
 }
 
