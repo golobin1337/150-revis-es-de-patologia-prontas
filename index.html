@@ -374,10 +374,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li><span class="tick">✓</span> 150 Revisões de Patologia Prontas e ilustradas</li>
           <li><span class="tick">✓</span> Conteúdos de patologia geral, ortopedia, neurologia, avaliação, reabilitação e muito mais</li>
           <li><span class="tick">✓</span> Revisões para prova, aula prática, atendimento e interpretação de casos</li>
-          <li><span class="tick">✓</span> Diário de Casos do Estagiário</li>
-          <li><span class="tick">✓</span> Simulado Fixação com gabarito comentado curto</li>
-          <li><span class="tick">✓</span> FisioRecursos Express</li>
-          <li><span class="tick">✓</span> Checklist Pré-Prova</li>
+          <li class="recv-gift"><span class="tick tick-gift" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5C10 3 12 8 12 8s2-5 4.5-5a2.5 2.5 0 0 1 0 5"/></svg></span> Diário de Casos do Estagiário</li>
+          <li class="recv-gift"><span class="tick tick-gift" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5C10 3 12 8 12 8s2-5 4.5-5a2.5 2.5 0 0 1 0 5"/></svg></span> Simulado Fixação com gabarito comentado curto</li>
+          <li class="recv-gift"><span class="tick tick-gift" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5C10 3 12 8 12 8s2-5 4.5-5a2.5 2.5 0 0 1 0 5"/></svg></span> FisioRecursos Express</li>
+          <li class="recv-gift"><span class="tick tick-gift" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5C10 3 12 8 12 8s2-5 4.5-5a2.5 2.5 0 0 1 0 5"/></svg></span> Checklist Pré-Prova</li>
           <li><span class="tick">✓</span> Acesso digital ao material completo</li>
           <li><span class="tick">✓</span> Link de acesso enviado no seu WhatsApp logo após a compra</li>
           <li><span class="tick">✓</span> E também no seu E-mail, para você não perder o acesso</li>
@@ -411,7 +411,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <li class="off"><span class="tick">✕</span> FisioRecursos Express</li>
         <li class="off"><span class="tick">✕</span> Checklist Pré-Prova</li>
       </ul>
-      <a class="btn btn-outline" href="https://pay.wiapy.com/_JjBACT9-1ZE">Quero só o plano básico</a>
+      <a class="btn btn-outline" id="basic-cta" href="https://pay.wiapy.com/_JjBACT9-1ZE">Quero só o plano básico</a>
     </div>
   </div>
 </section>
@@ -461,6 +461,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 </section>
+
+<!-- ==================== POPUP DESCONTO (plano básico) ==================== -->
+<dialog class="upsell" id="upsell" aria-labelledby="upsell-title">
+  <button class="upsell-close" type="button" aria-label="Fechar">✕</button>
+  <p class="upsell-badge">Oferta especial · só agora</p>
+  <h3 id="upsell-title">Espera! Leve o plano completo com desconto.</h3>
+  <p class="upsell-sub">Por apenas <strong>R$5 a mais</strong> você leva as 150 revisões + os 4 bônus.</p>
+  <div class="upsell-price">
+    <span class="price-from">DE <s>R$19,90</s> POR</span>
+    <span class="upsell-value">R$14,90</span>
+  </div>
+  <ul class="recv">
+    <li><span class="tick">✓</span> 150 Revisões de Patologia Prontas e ilustradas</li>
+    <li class="recv-gift"><span class="tick tick-gift" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5C10 3 12 8 12 8s2-5 4.5-5a2.5 2.5 0 0 1 0 5"/></svg></span> Diário de Casos do Estagiário</li>
+    <li class="recv-gift"><span class="tick tick-gift" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5C10 3 12 8 12 8s2-5 4.5-5a2.5 2.5 0 0 1 0 5"/></svg></span> Simulado Fixação com gabarito comentado curto</li>
+    <li class="recv-gift"><span class="tick tick-gift" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5C10 3 12 8 12 8s2-5 4.5-5a2.5 2.5 0 0 1 0 5"/></svg></span> FisioRecursos Express</li>
+    <li class="recv-gift"><span class="tick tick-gift" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5C10 3 12 8 12 8s2-5 4.5-5a2.5 2.5 0 0 1 0 5"/></svg></span> Checklist Pré-Prova</li>
+  </ul>
+  <a class="btn btn-orange" href="https://pay.wiapy.com/CaAqMTQlfir">Quero o completo por R$14,90</a>
+  <a class="upsell-decline" href="https://pay.wiapy.com/_JjBACT9-1ZE">Não, quero só o plano básico por R$9,90</a>
+</dialog>
 
 <script src="script.js"></script>
 </body>
